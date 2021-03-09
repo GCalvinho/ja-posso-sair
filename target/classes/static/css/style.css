@@ -1,0 +1,8 @@
+/*Define here the custom css rules*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
