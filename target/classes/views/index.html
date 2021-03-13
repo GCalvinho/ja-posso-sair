@@ -14,6 +14,7 @@
     
     <!--     Fonts     -->
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
 
 </head>
@@ -74,19 +75,24 @@
 
         <div class="content text-center">
             <td>
-                <span th:if="${finallyFree}"><img src="/images/status/yes/yes-7.png"/></span>
-                <span th:unless="${finallyFree}"><img src="/images/status/no/no-7.png"/></span>
+                <span  th:unless="${finallyFree}"><img src="/images/status/yes/yes-7.png"/></span>
+                <span th:unless="${finallyFree}"><img src="/images/status/no/no-5.png"/></span>
+                <span th:unless="${finallyFree}"><img src="/images/status/careful/warning-5.png"/></span>
             </td>
 
+
+
+            <h5 class="info-text"   style="color: white;">
+                Número de novos casos de COVID-19:&nbsp;<p><td th:text="${newCases}"/>&nbsp;<span class="cssanimation sequence fadeInBottom"><img src="/images/arrows/up/up-arrow-1.png"/></span></p>
+            </h5>
+
             <h5 class="info-text" style="color: white;">
-                Dados de <td th:text="${country}"/> de dia <td th:text="${day}"/>
+                Dados recolhidos para <img src="/images/icons/portugal/pt-1.png"/>, dia: <td th:text="${day}"/> <img src="/images/icons/calendar/calendar-1.png"/>
             </h5>
 
             <h5 class="info-text"   style="color: white;">
-                Novos casos:&nbsp;<p><td th:text="${newCases}"/>&nbsp;<img src="/images/arrows/up/up-arrow-1.png"/></p>
+                O número de casos ainda tem valor "+" aconcelha-se tomar as seguintes medidas de protecção:
             </h5>
-
-
 
             <!--Collapsable component-->
             <!--<p>
