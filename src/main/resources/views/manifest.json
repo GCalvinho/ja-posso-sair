@@ -1,10 +1,10 @@
 {
-  "name": "Coupon Hack",
-  "short_name": "Coupon Hack",
+  "name": "Ja posso sair?",
+  "short_name": "Ja posso sair?",
   "start_url": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#fff",
-  "description": "Aplicação para obter cupões Free Shipping.",
+  "description": "Aplicação para obter o status da pandemia COVID-19 em portugal.",
   "icons": [
     {
       "src": "windows10/Square71x71Logo.scale-400.png",
