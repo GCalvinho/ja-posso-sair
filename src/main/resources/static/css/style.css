@@ -28,3 +28,9 @@
     }
     to { opacity: 1 }
 }
+
+.list-group-item {
+    background-color: #ffffff73 !important;
+    border: 0px solid #dddddd00 !important;
+    margin-bottom: 0px; !important;
+}
